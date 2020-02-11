@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>百度一下，你就知道</title>
+		<style>
+			p{
+			  color: aqua;
+			}
+			li{
+			  background-color: lightgrey;
+			  /* 去黑点 */
+			  list-style: none;
+			  /* 设置宽高 */
+			  width: 200px;
+			  height: 40px;
+			  /* 文字水平居中 */
+			  text-align: center;
+			  font-size: 20px;
+			  /* 文字垂直 和宽高度相同居中*/
+			  line-height: 40px;
+			  /* 圆矩形 */
+			  border-radius: 0px;
+			  /* 动画效果 */
+			  transition: 0.2s linear;
+			  /* 横向 */
+			  float: left;
+			}
+			/* 伪类  hover*/
+			li:hover{
+			  color: white;
+			  /* #ff5b36 */
+			  background-color: black;
+			  /* 鼠标形状 */
+			  cursor: pointer;
+			}
+			/*属性选择器*/
+			input[type="search"]{
+				background-image: url(./img/相机.png);
+				/**背景图左对齐**/
+				background-position: right;
+				/**背景图宽高为15px**/
+				background-size: 60px;
+				/*背景图不重复**/
+				background-repeat: no-repeat;
+				text-indent: 15px;
+				/*去掉边框**/
+				border: 0px;
+				width: 800px;
+				height: 62px;
+				font-size: 20px;
+				
+			}
+			/*标签选择器**/
+			button{
+				/**照抄*/
+				
+				/*宽**/
+				width: 200px;
+				/*高**/
+				height: 62px;
+				/*背景颜色**/
+				background-color:#38f;
+				/*字体颜色**/
+				color: white;
+				/*边框**/
+				border: 0px;
+				/*圆角**/
+				border-radius: 3px;
+			}					
+		</style>
+	</head>
+	<body>
+		<div>
+			<table width="1500px" cellpadding="10px" cellpadding="10px" >
+				<tr>
+					<td>天气</td>
+					<td>换肤</td>
+					<td>消息</td>
+					<td>疫情</td>
+					<td>地图</td>
+					<td>视频</td>
+					<td>贴吧</td>
+					<td>学术</td>
+					<td>产品</td>
+					<td>更多</td>
+				</tr>
+			</table>
+		</div>
+		<div style="margin-left: 400px;">
+			 <img src="./img/百度疫情图.png" width="600px" height="200px" >
+		</div>
+		<div style="margin-left: 200px;">
+			<input type="search" placeholder="搜索你的内容"/>	
+			<button>百度一下</button>		
+		</div>
+	
+		<div style="width: 1500px;height: auto;margin-left: 360px;">
+			  <ul>
+			    <li>推荐</li>
+			    <li>我的关注</li>
+			    <li>导航</li>
+			  </ul>
+		</div>
+		<br/>
+		<div style="margin-left: 400px;">
+			<table width="1500px" cellpadding="10px" cellpadding="10px">	
+						<tr>
+							<td><h3>推荐</h3></td>
+						</tr>
+						<tr>
+							<td>
+								<table border="0px" bgcolor="azure">
+									<tr>
+										<td rowspan="4" colspan="4" >
+											<div><img src="./img/CCTV今日疫情分析.jpeg" width="300px" height="250px"></div>
+										</td>
+										<td>疫情下感人的瞬间</td>
+										<td>今天立春要吃春饼</td>
+									</tr>
+									<tr>
+										<td>浙江乐清宣布封城</td>
+										<td>贾静雯生病咳嗽</td>
+									</tr>
+									<tr>
+										<td>最后一次牵手凝视</td>
+										<td>最后一次牵手凝视</td>
+									</tr>
+									<tr>
+										<td>安七炫郑柔美交往</td>
+										<td>宁波实名买退烧药</td>
+									</tr>
+								
+								</table>	
+							</td>
+						</tr>
+						
+						<tr>
+							<td><h3>我的关注</h3></td>
+						</tr>
+						
+						<tr>
+							<td>
+								<table border="1px"bordercolor="green" bgcolor="aquamarine">
+									<tr>
+										<td >
+											<div><img src="./img/问医生.png" width="300px" height="250px"></div>
+										</td>
+										<td>***********</td>
+										<td>***********</td>
+										<td>***********</td>
+									
+									</tr>
+									
+									
+									
+									
+									
+								</table>
+							</td>
+						</tr>
+						
+						
+		</table>
+		</div>
+	</body>
+</html>
